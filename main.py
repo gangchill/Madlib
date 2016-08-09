@@ -36,12 +36,6 @@ class FakeReviewsDetection(object):
         self.combined_reviews.extend(self.genuine_reviews)
         self.combined_reviews.extend(self.fake_reviews)
         
-        '''all_reviews_docs = []
-        for f_review in self.combined_reviews:
-            all_reviews_docs.append(f_review["review"])
-        self.tfidf_vectorizer = TfidfVectorizer()
-        self.tfidf_matrix = self.tfidf_vectorizer.fit_transform(all_reviews_docs)'''
-        
         self.Train_Classifier()
 
     def Train_Classifier(self):
